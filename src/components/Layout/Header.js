@@ -4,6 +4,7 @@ import classes from './Header.module.css'
 
 import mealsImage from '../../assets/meals.jpg'
 import HeaderCartButton from "./HeaderCartButton"
+import MealsSummary from "../Meals/MealsSummary"
 
 
 const Header = () => {
@@ -16,7 +17,10 @@ const Header = () => {
             </header>
             <div className={classes['main-image']}>
                 <img src={mealsImage} alt="meals with delicious food" />
+                   
             </div>
+            <MealsSummary/> 
+            
         </Fragment>
     )
 

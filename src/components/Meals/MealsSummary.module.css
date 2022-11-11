@@ -1,0 +1,11 @@
+.summary {
+
+    position: relative;
+    border-radius: 12px;
+    border: 1px solid #383838;
+    width: 50%;
+    margin: auto;
+    background-color:#383838;
+    color: white;
+    text-align: center;
+}
