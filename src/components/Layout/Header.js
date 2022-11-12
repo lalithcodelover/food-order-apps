@@ -19,7 +19,7 @@ const Header = () => {
                 <img src={mealsImage} alt="meals with delicious food" />
                    
             </div>
-            <MealsSummary/> 
+            
             
         </Fragment>
     )
