@@ -1,5 +1,5 @@
 import React from "react";
-import classes from './AvailableMeals.module.css'
+import classes from "./AvailableMeals.module.css";
 
 const DUMMY_MEALS = [
   {
@@ -29,7 +29,15 @@ const DUMMY_MEALS = [
 ];
 
 const AvailableMeals = () => {
-  const MealsList = DUMMY_MEALS.map((meal) => <li>{meal.name}</li>);
+  const MealsList = DUMMY_MEALS.map((meal) => {
+    return (
+      <li>
+        <h3>{meal.name}</h3>
+        <div className={classes.description}>{meal.description}</div>
+        <div className={classes.price}>${meal.price}</div>
+      </li>
+    );
+  });
 
   return (
     <section className={classes.meals}>

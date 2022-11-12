@@ -1,24 +1,41 @@
 .meals {
-    max-width: 60rem;
-    width: 90%;
-    margin: 2rem auto;
-    animation: meals-appear 1s ease-out forwards;
+  max-width: 60rem;
+  width: 90%;
+  margin: 2rem auto;
+  animation: meals-appear 1s ease-out forwards;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px white;
+}
+
+.meals ul {
+  list-style: none;
+  margin: 0;
+  width: 40rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+.meals li {
+  padding: 0%;
+}
+
+.description {
+  font-style: italic;
+}
+.price {
+  padding-top: 5px;
+  color: brown;
+  font-size: 1rem;
+  font-weight: 900;
+}
+@keyframes meals-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
   }
-  
-  .meals ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  @keyframes meals-appear {
-    from {
-      opacity: 0;
-      transform: translateY(3rem);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+}
