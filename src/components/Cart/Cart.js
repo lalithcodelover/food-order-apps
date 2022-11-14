@@ -6,12 +6,15 @@ import { useContext } from "react";
 const Cart = (props) => {
   const cartCtx = useContext(CartContext);
 
-  const increaseQuantityHandler= (item) =>{
-     cartCtx.addItem({...item,quantity:1})
+  const increaseQuantityHandler=(item)=>{
+    cartCtx.addItem({...item,quantity:1})
+
   }
-  const decreaseQuantityHandler= (id)=>{
-    cartCtx.removeItem(id)
+
+  const decreaseQuantityHandler=(item)=>{
+   cartCtx.removeItem(item)
   }
+  
   const cartItems = (
     <ul className={classes['cart-items']}>
       {cartCtx.items.map((item) => {
@@ -25,8 +28,8 @@ const Cart = (props) => {
             </div>
             
             <div className={classes.alter}>
-<button className={classes.decrease} onClick={()=>decreaseQuantityHandler(item.id)}>-</button>
-<button className={classes.increase} onClick={()=>increaseQuantityHandler(item)}>+</button>
+<button className={classes.decrease} onClick={()=>decreaseQuantityHandler(item)}>-</button>
+<button className={classes.increase} onClick={()=>increaseQuantityHandler(item)} >+</button>
             </div>
             </li>;
       })}
