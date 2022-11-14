@@ -48,3 +48,39 @@
   ul {
     list-style: none;
   }
+  li {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 1rem; */
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+  }
+  .price {
+    margin-top: 0.25rem;
+    font-weight: bold;
+    color: #ad5502;
+    font-size: 1rem;
+  }
+
+  .increase{
+    color:white;
+    background-color: #8a2b06;
+    border: 1px solid #8a2b06;
+    border-radius: 5px;
+    padding: 2px 12px;
+  }
+  .decrease{
+    color: #8a2b06;
+    background-color: white;
+    border: 1px solid #8a2b06;
+    border-radius: 5px;
+    padding: 2px 12px;
+    margin-right: 5px;
+    
+   
+  }
+  .alter {
+    margin-top: 50px;
+    margin-right: 25px;
+    
+  }
